@@ -4,6 +4,7 @@ public class CicloBasico {
     public static void main(String[] args) {
         //contador de tipo entero
         int contador = 10;
+        int total = 0;
 
         // while (contador >= 1) {
         //     //instruccion de ciclo
@@ -101,14 +102,20 @@ public class CicloBasico {
         
         while (contador >= 33) {
             System.out.println("sexto punto While: " + contador);
+            total += contador;
             contador -= 11;
         }
+
+        System.out.println(total);
         
         System.out.println("****************************");
         
         for(contador = 99; contador >= 33; contador -= 11) {
+            total += contador;
             System.out.println("sexto punto For: " + contador);
         }
+        System.out.println(total);
+
     }
 
 }
